@@ -1,0 +1,4 @@
+.wrapper {
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 148px 150px 33px 386px 386px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polaroid</title>
+<style>
+
+body {
+    margin: 0;
+    background-color: #E9E9E9;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    width:1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+.polaroid {
+    width: 294px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.rotate_right {
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+	position:relative;
+	animation-name: toss;
+    animation-duration:2s;
+    margin-top: 80px;
+}
+
+.rotate_left {
+    -ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    position:relative;
+	animation-name: tossTwo;
+    animation-duration:2s;
+}
+
+
+@keyframes tossTwo{
+
+    from{
+    transform: rotate(0deg);
+    left:0;
+    }
+
+    to{
+    transform: rotate(-8deg);
+    left: 300px;
+    }
+
+}
+
+@keyframes toss{
+
+    from{
+    transform: rotate(0deg);
+    left:0;
+    }
+
+    to{
+    transform: rotate(32deg);
+    left: 300px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+<header>
+<div>
+    <h1>Polaroid Gallary</h1>
+</div>
+</header>
+<div class="polaroid rotate_right">
+  <img src="https://astefanick.files.wordpress.com/2011/05/baltimore_dumpster.jpg" alt="Pulpit rock" width="284" height="213">
+  <p class="caption">Baltimore's Inner harbor</p>
+</div>
+
+<div class="polaroid rotate_left">
+  <img src="http://news.morgan.edu/wp-content/uploads/2015/04/BSSC_Rendering.jpg" alt="Monterosso al Mare" width="284" height="213">
+  <p class="caption">Morgan State University</p>
+</div>
+
+<div class="polaroid rotate_left">
+  <img src="http://news.morgan.edu/wp-content/uploads/2015/04/BSSC_Rendering.jpg" alt="Monterosso al Mare" width="284" height="213">
+  <p class="caption">Morgan State University</p>
+</div>
+
+<div class="polaroid rotate_left">
+  <img src="http://news.morgan.edu/wp-content/uploads/2015/04/BSSC_Rendering.jpg" alt="Monterosso al Mare" width="284" height="213">
+  <p class="caption">Morgan State University</p>
+</div>
+</body>
+</html>
